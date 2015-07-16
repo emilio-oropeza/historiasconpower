@@ -92,9 +92,6 @@
 	}
 }
 @media(max-width: 500px){
-	#indepth_cover {
-		height: 640px;
-	}
 	#videos_container {
 	    width: 320px;
 	    height: 270px;

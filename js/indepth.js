@@ -37,6 +37,18 @@ function loadDisqus(source, identifier, url) {
 };
 $(document).ready(function(){
 	loadDisqus($("#indepth_coments"),disqus_url, "http://juanfutbol.com/indepth/"+disqus_url);
+	if($(this).width() < 500){
+		$("#indepth_cover").css("height",window.innerHeight+"px");
+		console.log($(window).width());
+	}
+	$(window).resize(function(){
+		if($(this).width() < 500){
+			$("#indepth_cover").css("height",window.innerHeight+"px");
+
+		}else{
+			$("#indepth_cover").attr("style","");
+		}
+	});
 
 	$('#indepth_videos').waypoint(function(direction) {
 		if(direction == "down"){
