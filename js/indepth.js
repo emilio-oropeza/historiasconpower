@@ -56,7 +56,7 @@ $(document).ready(function(){
 		}else{
 			$("#pbarra").fadeOut();
 		}
-	},{offset: '90%'});
+	},{offset: '50%'});
 	$('#videos_barra').waypoint(function(direction) {
 		if(direction=='down'){
 			$(".indepth_share").fadeOut("slow");

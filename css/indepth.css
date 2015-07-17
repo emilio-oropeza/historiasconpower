@@ -4,7 +4,6 @@
 .indepth_share{
 	position: fixed;
 	right: 15px;
-	bottom: 20px;
 	z-index: 2000;
 	display: -webkit-inline-box;
 	display: -webkit-inline-flex;
