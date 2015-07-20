@@ -1,6 +1,6 @@
 var disqus_shortname = 'juanfutbol';
 var disqus_identifier;
-var disqus_url="";
+var disqus_url="historias-con-power";
 var disqus_number_c=2;
 var disqus_per_page=3;
 var tamaño_total=1920;
@@ -37,24 +37,14 @@ function loadDisqus(source, identifier, url) {
 };
 $(document).ready(function(){
 	loadDisqus($("#indepth_coments"),disqus_url, "http://juanfutbol.com/indepth/"+disqus_url);
-	/*if($(this).width() < 500){
-		$("#indepth_cover").css("height",window.innerHeight+"px");
-		console.log($(window).width());
-	}
-	$(window).resize(function(){
-		if($(this).width() < 500){
-			$("#indepth_cover").css("height",window.innerHeight+"px");
-
-		}else{
-			$("#indepth_cover").attr("style","");
-		}
-	});*/
-
+	
 	$('#indepth_videos').waypoint(function(direction) {
 		if(direction == "down"){
 			$("#pbarra").fadeIn("slow");
+			$(".indepth_share").fadeIn();
 		}else{
 			$("#pbarra").fadeOut();
+			$(".indepth_share").fadeOut("slow");
 		}
 	},{offset: '50%'});
 	$('#videos_barra').waypoint(function(direction) {
